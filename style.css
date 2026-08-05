@@ -1,9 +1,39 @@
 body {
     background-color: blanchedalmond;
+    margin: 0;
+    
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+nav {
+    border-bottom: 1px solid #888;
+    padding-bottom: 15px;
 }
 
 h1 {
-    color: red;
+    color: rebeccapurple;
     text-align: center;
-    text-decoration: dashed;
+    font-family: "IBM Plex Mono", monospace;
+    border: 2px solid black;
+}
+
+h2 {
+    color: rebeccapurple;
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+p {
+    font-size: 30px;
+}
+
+.big_pic {
+    display: block;
+    margin: auto;
+    border: 5px solid rebeccapurple;
 }
