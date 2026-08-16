@@ -79,6 +79,8 @@ footer p {
 
 .big_pic {
     display: block;
-    margin: auto;
-    border: 5px solid var(--text-colour-heading);
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
 }

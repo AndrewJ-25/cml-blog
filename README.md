@@ -3,12 +3,11 @@
 gonna add more stuff later
 
 ## TODO
-- fonts and colours
-    - font for headings, paragraphs
-    - colour scheme for background, headings, paragraphs
-
+- learn css classes
+    - make bullet list look nicer
+- random picture generator
+- how to organise posts/ projects
 - add animated cat
-- link spotify
 - implement guestbook
 
 ## Preview
