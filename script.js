@@ -27,35 +27,28 @@ document.addEventListener("mousemove", function(event) {
 });
 
 let personalSpace = 100;
-const step = 3;
+const step = 2;
 
 function animateCat() {
-    let distance = Math.sqrt((mouseX - catX)**2 + (mouseY - catY)**2)
+    let distanceX = mouseX - catX
+    let distanceY = mouseY - catY
+    let distanceR = Math.sqrt((distanceX)**2 + (distanceY)**2)
 
-    if (distance > personalSpace) {
+    if (distanceR > personalSpace) {
         /*
         catX += (mouseX - catX) * 0.05;
         catY += (mouseY - catY) * 0.05;
         */
-        if (catX < mouseX) {
-            catX += step;
-        }
-        else {
-            catX -= step;
-        }
+        catX += step * distanceX / distanceR;
+        catY += step * distanceY / distanceR;
 
-        if (catY < mouseY) {
-            catY += step;
-        }
-        else {
-            catY -= step;
-        }
     }
 
     cat.style.left = catX + "px";
     cat.style.top = catY + "px";
 
     requestAnimationFrame(animateCat);
+    console.log(catX, catY);
 }
 
 animateCat();
