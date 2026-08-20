@@ -1,8 +1,8 @@
 const images = [
-    "random_pics/alley.png",
-    "random_pics/flag.jpeg",
-    "random_pics/noot-noot.jpeg",
-    "random_pics/wandering.png"
+    "images/random_pics/alley.png",
+    "images/random_pics/flag.jpeg",
+    "images/random_pics/noot-noot.jpeg",
+    "images/random_pics/wandering.png"
 ];
 
 const randomImage = document.getElementById("random-image");
