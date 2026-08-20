@@ -8,17 +8,37 @@ const images = [
 const randomImage = document.getElementById("random-image");
 const newImageButton = document.getElementById("new-pic")
 
-const cat = document.getElementById("cat");
+function showRandomImage() {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    randomImage.src = images[randomIndex];
+}
+
+/*
+const test_cat = document.getElementById("test_cat");
 
 let mouseX = 0;
 let mouseY = 0;
 
-let catX = 0;
-let catY = 0;
+let test_catX = 0;
+let test_catY = 0;
 
-function showRandomImage() {
-    const randomIndex = Math.floor(Math.random() * images.length);
-    randomImage.src = images[randomIndex];
+let personalSpace = 100;
+const step = 2;
+
+function animatetest_cat() {
+    let distanceX = mouseX - test_catX
+    let distanceY = mouseY - test_catY
+    let distanceR = Math.sqrt((distanceX)**2 + (distanceY)**2)
+
+    if (distanceR > personalSpace) {
+        test_catX += step * distanceX / distanceR;
+        test_catY += step * distanceY / distanceR;
+    }
+
+    test_cat.style.left = test_catX + "px";
+    test_cat.style.top = test_catY + "px";
+
+    requestAnimationFrame(animatetest_cat);
 }
 
 document.addEventListener("mousemove", function(event) {
@@ -26,32 +46,9 @@ document.addEventListener("mousemove", function(event) {
     mouseY = event.clientY
 });
 
-let personalSpace = 100;
-const step = 2;
+*/
 
-function animateCat() {
-    let distanceX = mouseX - catX
-    let distanceY = mouseY - catY
-    let distanceR = Math.sqrt((distanceX)**2 + (distanceY)**2)
-
-    if (distanceR > personalSpace) {
-        /*
-        catX += (mouseX - catX) * 0.05;
-        catY += (mouseY - catY) * 0.05;
-        */
-        catX += step * distanceX / distanceR;
-        catY += step * distanceY / distanceR;
-
-    }
-
-    cat.style.left = catX + "px";
-    cat.style.top = catY + "px";
-
-    requestAnimationFrame(animateCat);
-    console.log(catX, catY);
-}
-
-animateCat();
+//animatetest_cat();
 
 showRandomImage();
 newImageButton.addEventListener("click", showRandomImage);
