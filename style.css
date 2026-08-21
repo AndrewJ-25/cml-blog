@@ -1,6 +1,7 @@
 :root {
     --colour-background: blanchedalmond;
     --colour-highlight: #8b4513;
+    --colour-select: mediumseagreen;
     --font-heading: "IBM Plex Mono", monospace;
 }
 
@@ -26,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: var(--colour-select);
 }
 
 main {
@@ -54,7 +55,7 @@ h2 {
     color: var(--colour-highlight);
     text-align: center;
     font-family: var(--font-heading);
-    margin-bottom: 20pxpx;
+    margin-bottom: 20px;
 }
 
 p {
@@ -91,7 +92,7 @@ footer p {
 }
 
 .btn:hover {
-  background-color: mediumseagreen;
+  background-color: var(--colour-select);
 }
 
 .btn:active {
@@ -118,4 +119,41 @@ footer p {
     transform: scale(2);
 
     pointer-events: none;
+}
+
+.post-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 5px solid var(--colour-highlight);
+    padding: 15px;
+    margin-bottom: 15px;
+
+    text-decoration: none;
+}
+
+.post-thumbnail img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+    border: 5px solid var(--colour-highlight);
+}
+
+.post-thumbnail h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0px;
+}
+
+.post-thumbnail p {
+    font-size: 1rem;
+    color: #000;
+    margin: 10px 0 10px 0;
+}
+
+.post-thumbnail .date {
+    font-size: 1rem;
+    color: gray;
 }
