@@ -1,9 +1,6 @@
 const cat = document.getElementById("cat");
 const FRAME_SIZE = 32;
 
-// -------------------------
-// Animation
-// -------------------------
 const framesRun = [
     [20, 0],
     [21, 0],
@@ -63,10 +60,6 @@ function animateCat() {
 
 setInterval(animateCat, 100);
 
-// -------------------------
-// Mouse tracking
-// -------------------------
-
 let mouseX = 0;
 let mouseY = 0;
 
@@ -81,9 +74,6 @@ document.addEventListener("mousemove", (event) => {
     mouseY = event.clientY;
 });
 
-// -------------------------
-// Cat movement
-// -------------------------
 function getDirection(dx, dy) {
     const angle = Math.atan2(dy, dx) - 0.2;
     let direction = Math.round(angle / (Math.PI / 4));

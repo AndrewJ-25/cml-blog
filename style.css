@@ -77,6 +77,25 @@ footer p {
     color: var(--background-colour);
 }
 
+.btn {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 12px 24px;        /* Space inside the button */
+  border: none;              /* Remove border */
+  border-radius: 8px;        /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;           /* Hand cursor on hover */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.btn:active {
+  transform: scale(0.98);    /* Slight press effect */
+}
+
 .big_pic {
     display: block;
     max-width: 400px;
@@ -100,7 +119,7 @@ footer p {
     height: 32px;
     background-image: url(images/cat_frames/black_2.png);
     background-repeat: no-repeat;
-    
+
     transform: scale(2);
 
     pointer-events: none;
