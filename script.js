@@ -17,7 +17,7 @@ const images = [
 ];
 
 const randomImage = document.getElementById("random-image");
-const newImageButton = document.getElementById("new-pic")
+const newImageButton = document.getElementById("new-pic");
 
 function showRandomImage() {
     const randomIndex = Math.floor(Math.random() * images.length);

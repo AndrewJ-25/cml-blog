@@ -1,16 +1,16 @@
 :root {
-    --background-colour: blanchedalmond;
-    --text-colour-heading: #8b4513;
+    --colour-background: blanchedalmond;
+    --colour-highlight: #8b4513;
     --font-heading: "IBM Plex Mono", monospace;
 }
 
 body {
-    background-color: var(--background-colour);
+    background-color: var(--colour-background);
     margin: 0;
 }
 
 header {
-    background-color: var(--text-colour-heading);
+    background-color: var(--colour-highlight);
     padding: 20px;
 }
 
@@ -20,7 +20,7 @@ nav {
 }
 
 nav a {
-    color: var(--background-colour);
+    color: var(--colour-background);
     text-decoration: none;
     font-family: var(--font-heading);
 }
@@ -37,13 +37,13 @@ main {
 
 hr {
     border: none;
-    border-top: 5px solid var(--text-colour-heading);
-    margin: 50px;
+    border-top: 5px solid var(--colour-highlight);
+    margin: 40px;
 }
 
 h1 {
     font-size: 3rem;
-    color: var(--text-colour-heading);
+    color: var(--colour-highlight);
     text-align: center;
     font-family: var(--font-heading);
     border: 2px solid black;
@@ -51,9 +51,10 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    color: var(--text-colour-heading);
+    color: var(--colour-highlight);
     text-align: center;
     font-family: var(--font-heading);
+    margin-bottom: 20pxpx;
 }
 
 p {
@@ -68,32 +69,33 @@ ul {
 
 footer {
     text-align: center;
-    background-color: var(--text-colour-heading);
+    background-color: var(--colour-highlight);
     padding: 20px;
+    margin-top: 20px;
 }
 
 footer p {
     font-size: 0.8rem;
-    color: var(--background-colour);
+    color: var(--colour-background);
 }
 
 .btn {
-  background-color: #4CAF50; /* Green background */
-  color: white;              /* White text */
-  padding: 12px 24px;        /* Space inside the button */
-  border: none;              /* Remove border */
-  border-radius: 8px;        /* Rounded corners */
-  font-size: 16px;
-  cursor: pointer;           /* Hand cursor on hover */
-  transition: background-color 0.3s ease;
+    background-color: var(--colour-background);
+    color: var(--colour-highlight);
+    padding: 6px 24px;
+    border: 3px solid var(--colour-highlight);
+    font-size: 16px;
+    font-family: var(--font-heading);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: mediumseagreen;
 }
 
 .btn:active {
-  transform: scale(0.98);    /* Slight press effect */
+  transform: scale(0.98);
 }
 
 .big_pic {
@@ -102,14 +104,7 @@ footer p {
     width: 100%;
     height: auto;
     margin: 20px auto;
-    border: 8px solid var(--text-colour-heading);
-}
-
-#test_cat {
-    position: fixed;
-    width: 80px;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
+    border: 8px solid var(--colour-highlight);
 }
 
 #cat {
