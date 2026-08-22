@@ -1,15 +1,17 @@
-# yuh i made a website hehe
+# Yuh i made a website hehe
 
-gonna add more stuff later
+This website is Captain Moonlite's personal blog, projects portfolio and second home online:p
 
-## TODO
-- learn css classes
-    - make bullet list look nicer
-- random picture generator
-- how to organise posts/ projects
-- add animated cat
-- implement guestbook
+This was also an excuse to learn some web dev: this project involved me learning html, css and js for the first time. Had plenty of fun doing this.
 
-## Preview
+No part of this website was made using AI!
 
-![Website Preview](https://cdn.hackclub.com/019faf06-340f-7d76-a74e-8df2904cb2a6/screenshot.png)
+## Features
+### Animated cat
+An animated cat tracks the cursor on the homepage. Different animations are played according to direction. Spritesheet was downloaded for free from here: https://pop-shop-packs.itch.io/cats-pixel-asset-pack
+
+### Random pic
+A random picture is selected from a folder and displayed. A button swaps the picture.
+
+### Guestbook
+A guestbook will be implemented in the future. This will involve some backend dev and security features.
