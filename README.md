@@ -23,3 +23,22 @@ A random picture is selected from a folder and displayed. A button swaps the pic
 
 ### Guestbook
 A guestbook will be implemented in the future. This will involve some backend dev and security features.
+
+## Host it locally with Python
+
+1. Clone this repo
+```
+git clone https://github.com/AndrewJ-25/cml-blog.git
+```
+2. cd to the repo
+```
+cd cml.blog
+```
+3. Create a local server with Python:
+```
+python3 -m http.server 3933
+```
+4. Visit the site in your browser at
+```
+http://localhost:3933
+```
