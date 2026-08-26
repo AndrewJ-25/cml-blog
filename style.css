@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: var(--colour-highlight);
+    background-color: var(--colour-background);
     margin: 0;
 }
 
