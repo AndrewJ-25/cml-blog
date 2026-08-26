@@ -2,7 +2,7 @@
     --colour-background: blanchedalmond;
     --colour-highlight: #8b4513;
     --colour-select: mediumseagreen;
-    --font-heading: "IBM Plex Mono", monospace;
+    --font-heading: "IBM Plex Mono", "PingFang SC", sans-serif;
 }
 
 @font-face {
@@ -20,13 +20,12 @@
 }
 
 body {
-    font-family: "IBM Plex Mono", "Noto Sans CJK SC", "PingFang SC", sans-serif;
-    background-color: var(--colour-background);
+    background-color: var(--colour-highlight);
     margin: 0;
 }
 
 header {
-    background-color: red;
+    background-color: var(--colour-highlight);
     padding: 20px;
 }
 
