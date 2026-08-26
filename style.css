@@ -20,12 +20,13 @@
 }
 
 body {
+    font-family: "IBM Plex Mono", "Noto Sans CJK SC", "PingFang SC", sans-serif;
     background-color: var(--colour-background);
     margin: 0;
 }
 
 header {
-    background-color: var(--colour-highlight);
+    background-color: red;
     padding: 20px;
 }
 
